@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            display: grid;
+            grid-template-rows: auto 600px 300px;
+            border: 2px solid black;
+        }
+        .item1-content{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            place-items: center;
+            column-gap: 450px;
+        }
+        a{
+            text-decoration: none;
+        }
+        .nav-link{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 30px;
+        }
+        .loginbutton{
+            padding: 5px 20px;
+            color: black;
+            background-color: greenyellow;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .item2-content{
+            display: grid;
+            grid-template-columns: 3fr 2fr 0.5fr;
+        }
+        .left{
+            display: grid;
+            grid-template-rows: auto auto auto;
+            grid-row-gap: 30px;
+            align-content: center;
+            padding: 30px;
+        }
+        .readmore-button{
+            padding: 5px 20px;
+            color: white;
+            background-color: black;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .right{
+            background-color: yellow;
+        }
+
+        .item3-content{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        .minimum-order{
+            display: grid;
+            padding: 0 90px;
+            padding-top: 100px;
+        }
+        .minimum-order img{
+            margin-left: 70px;
+        }
+        .item3{
+            background-color: rgb(70, 65, 59);
+            color: white;
+        }
+        .item3 p{
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">
+            <div class="item1-content">
+                <div ><img src="../Second/./download.png" alt="" width="40px" height="40px"></div>
+                <div class="nav-link">
+                    <a href="">Home</a>
+                    <a href="">About</a>
+                    <a href="">Contact</a>
+                </div>
+                <div ><button class="loginbutton">Login</button></div>
+            </div>
+        </div>
+
+
+        <div class="item2">
+            <div class="item2-content">
+                <div class="left">
+                        <div><h1>Healthy Food</h1></div>
+                        <div><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur neque aperiam commodi ex eligendi accusantium, ut quasi provident animi dignissimos labore error quibusdam deleniti laborum debitis, sint enim, itaque omnis illo! Molestias sapiente odio nisi repudiandae praesentium reiciendis optio maiores esse quam rem pariatur ducimus minus necessitatibus odit iste exercitationem tempore distinctio voluptas magni, fugit numquam! Molestias, culpa doloribus sit nemo, minima beatae aliquid suscipit praesentium delectus expedita, itaque vero voluptate exercitationem iure. Ipsa quidem, pariatur obcaecati facilis, veniam tempora dicta quam quod atque repudiandae ab consequatur dolor! Natus consequatur perspiciatis perferendis cum cupiditate iusto nobis repellat qui laborum iure?</p></div>
+                        <div><button class="readmore-button">Read More</button></div>
+                    </div>
+                <div class="middle"><img src="../Second/./J.jpg" alt="" width="500px" height="600px"></div>
+                <div class="right"></div>
+            </div>
+        </div>
+
+
+        <div class="item3">
+            <div class="item3-content">
+                <div class="minimum-order">
+                    <div><img src="../Second/download.png" alt="" width="60px" height="60px"></div>
+                    <div><h2>No Minimum Order</h2></div>
+                    <div><p>Order in for yourself or for the group, with no restriction on order value</p></div>
+                </div>
+                <div class="minimum-order">
+                    <div><img src="../Second/download.png" alt="" width="60px" height="60px"></div>
+                    <div><h2>Live Order Tracking</h2></div>
+                    <div><p>Order in for yourself or for the group, with no restriction on order value</p></div>
+                </div>
+                <div class="minimum-order">
+                    <div><img src="../Second/download.png" alt="" width="60px" height="60px"></div>
+                    <div><h2>Lightning-Fast Delivery</h2></div>
+                    <div><p>Order in for yourself or for the group, with no restriction on order value</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

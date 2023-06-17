@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            height: 100vh;
+            margin: 20px;
+            background-color: black;
+            color: aliceblue;
+            border-radius: 20px;
+        }
+        .container2{
+            display: grid;
+            grid-template-rows: 280px 280px;
+            row-gap: 14px;
+        }
+        .item1-content{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            height: 100%;
+            margin-left: 30px;
+            margin-top: 10px;
+            color: black;
+            column-gap: 40px;
+        }
+        .purple{
+            background-color: #8D3DAF;
+            border-radius: 20px;
+            width: 200px;
+        }
+        .orange{
+            background-color: #E07C24;
+            border-radius: 20px;
+            width: 200px;
+        }
+        .darkgrey{
+            background-color: #758283;
+            border-radius: 20px;
+            width: 200px;
+        }
+        .pink{
+            background-color: #E03B8B;
+            border-radius: 20px;
+            width: 200px;
+        }
+        .red{
+            background-color: #FF6666;
+            border-radius: 20px;
+            width: 200px;
+        }
+        .skyblue{
+            background-color: #03C6C7;
+            border-radius: 20px;
+            width: 200px;
+        }
+        .lightgrey{
+            background-color: #CAD5E2;
+            border-radius: 20px;
+            width: 200px;
+        }
+        .blue{
+            background-color: #35BDD0;
+            border-radius: 20px;
+            width: 200px;
+        }
+        .image-text{
+            text-align: center;
+            padding-top: 130px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Feeling Fancy</h1>
+        <div class="container2">
+            <div class="item1">
+                <div class="item1-content">
+                    <div class="purple image-text">#8D3DAF</div>
+                    <div class="orange image-text">#E07C24</div>
+                    <div class="darkgrey image-text">#758283</div>
+                    <div class="pink image-text">#E03B8B</div>
+                </div>
+            </div>
+            <div class="item2">
+                <div class="item1-content">
+                    <div class="red image-text">#FF6666</div>
+                    <div class="skyblue image-text">#03C6C7</div>
+                    <div class="lightgrey image-text">#CAD5E2</div>
+                    <div class="blue image-text">#35BDD0</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

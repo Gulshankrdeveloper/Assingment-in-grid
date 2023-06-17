@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            display: grid;
+            border: 2px solid green;
+            grid-template-columns: 3fr 2fr 0.5fr;
+            grid-template-rows: 100%;
+            height: 100vh;
+            padding: 5px;
+        }
+        .content{
+            height: 80vh;
+            display: grid;
+            grid-template-rows: auto auto auto;
+           align-content: center;
+           grid-row-gap: 30px;
+           padding: 50px;
+        }
+        .button{
+            padding: 5px 20px;
+            color: white;
+            background-color: black;
+            cursor: pointer;
+        }
+        .item3{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">
+            <div class="content">
+                <div><h1>Healthy Food</h1></div>
+                <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi est aperiam ab facere dolores sit cupiditate nihil, sapiente quas numquam dolore nostrum tempore ea! Eum iusto voluptatibus nostrum, totam accusamus itaque ipsum distinctio molestias earum veritatis provident animi similique architecto illo aut perferendis, doloremque excepturi consequatur? Veritatis unde obcaecati ipsum cupiditate perspiciatis voluptatem accusantium magnam dignissimos culpa, magni numquam, exercitationem recusandae. Rem eius possimus iure placeat illo quo est praesentium quas aperiam voluptatem voluptatibus deleniti velit, eveniet a enim libero laboriosam cum. Accusantium quos quibusdam sint aperiam? Explicabo est praesentium ut, architecto non mollitia recusandae fugiat sit iusto assumenda corrupti?</p></div>
+                <div><button class="button">Read More</button></div>
+            </div>
+        </div>
+        <div class="item item2">
+            <img src="./download.jpg" alt="" width="470px" height="620px">
+        </div>
+        <div class="item item3"></div>
+    </div>
+</body>
+</html>
